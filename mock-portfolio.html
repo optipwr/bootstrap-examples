@@ -5,7 +5,12 @@
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+
 	<link rel="stylesheet" type="text/css" href="portfolio.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -16,9 +21,9 @@
 	    <div class="navbar-header">
 	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 	        <span class="sr-only">Toggle navigation</span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span> <!-- These are the hamburgers that show when page is small -->
+	        <span class="icon-bar"></span> <!-- These are the hamburgers -->
+	        <span class="icon-bar"></span> <!-- These are the hamburgers -->
 	      </button>
 	      <a class="navbar-brand" href="#">Brand</a>
 	    </div>
@@ -27,7 +32,6 @@
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav">
 	        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-	        <li><a href="#">Link</a></li>
 	        <li class="dropdown">
 	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
 	          <ul class="dropdown-menu">
@@ -77,7 +81,71 @@
 	<div class="container">
 		<div class="row">
 			<h2>Portfolio</h2>
-			
+
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			  <!-- Indicators -->
+			  <ol class="carousel-indicators">
+			    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+			  </ol>
+
+			  <!-- Wrapper for slides -->
+			  <div class="carousel-inner text-center" role="listbox">
+			    <div class="item active">
+			      <img src="portfolio-images/cabin.png" alt="...">
+			      <div class="carousel-caption">
+			        A Lovely Cabin
+			      </div>
+			    </div>
+			    <div class="item">
+			      <img src="portfolio-images/cake.png" alt="...">
+			      <div class="carousel-caption">
+			        A Cake or something
+			      </div>
+			    </div>
+			    <div class="item">
+			      <img src="portfolio-images/circus.png" alt="...">
+			      <div class="carousel-caption">
+			        Circus!
+			      </div>
+			    </div>
+			    <div class="item">
+			      <img src="portfolio-images/game.png" alt="...">
+			      <div class="carousel-caption">
+			        Games
+			      </div>
+			    </div>
+			    <div class="item">
+			      <img src="portfolio-images/safe.png" alt="...">
+			      <div class="carousel-caption">
+			        Safe
+			      </div>
+			    </div>
+			    <div class="item">
+			      <img src="portfolio-images/submarine.png" alt="...">
+			      <div class="carousel-caption">
+			        Sub
+			      </div>
+			    </div>
+			    A reference of portfolio items for you to browse
+			  </div>
+
+			  <!-- Controls -->
+			  <!-- <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+			    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			    <span class="sr-only">Previous</span>
+			  </a>
+			  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+			    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			    <span class="sr-only">Next</span>
+			  </a> -->
+			</div>
+
 			<div class="col-sm-6 col-md-4">
 				<img src="portfolio-images/cabin.png">
 			</div>
@@ -113,7 +181,7 @@
 				<form>
 				  <div class="form-group form-space">
 				    <label for="email">Name</label>
-				    <input type="email" class="form-control" id="email">
+				    <input type="text" class="form-control" id="email">
 				  </div>
 				  <div class="form-group form-space">
 				    <label for="basic">Email Address</label>
@@ -144,6 +212,7 @@
 			</div>
 		</div>
 	</div>
+
 
 </body>
 </html>

@@ -13,3 +13,8 @@ img {
 .btm {
 	margin-bottom: 30px;
 }
+
+.carousel{
+	max-width: 900px;
+	margin: auto;
+}
